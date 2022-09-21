@@ -1,0 +1,422 @@
+.main {
+
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.heading {
+
+    width: 63%;
+}
+
+.heading h1 {
+
+    font-size: 50px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.heading p {
+
+    color: #8B8B7E;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    letter-spacing: 0.025em;
+}
+
+.imagemainbox {
+
+    display: flex;
+    /* width: 85%; */
+    margin-top: 100px;
+    gap: 20px;
+    opacity: 80%;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+
+.col1 {
+
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+}
+
+
+.col2 {
+
+    width: 240px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.col3 {
+
+    height: 600px;
+    overflow: hidden;
+}
+
+.flipcardfront {
+
+    position: relative;
+    top: 50%;
+    float: left;
+    margin-left: 10px;
+}
+
+.flipcardfront h1 {
+
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.flipcardfront p {
+
+    margin-top: -23px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.flipcardinner {
+
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flipcardinner:hover{
+
+    transform: rotateY(180deg);
+}
+
+.flipcardback{
+
+position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  background-color: grey;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flipcardback h1{
+
+    font-size: 35px;
+}
+
+.img1 {
+
+    background-image: url("../../../../public/Data/1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 40%;
+    perspective: 1000px;
+}
+
+.img2 {
+
+    background-image: url("../../../../public/Data/2.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+    height: 59%;
+}
+
+.img3 {
+
+    background-image: url("../../../../public/Data/3.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 45%;
+}
+
+.img4 {
+    background-image: url("../../../../public/Data/4.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+    height: 57%;
+}
+
+.img5{
+    width: 400px;
+    background-image: url("../../../../public/Data/5.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.img8{
+    width: 350px;
+    background-image: url("../../../../public/Data/8.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.img6{
+    width: 250px;
+    background-image: url("../../../../public/Data/6.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+.img7{
+    width: 240px;
+    background-image: url("../../../../public/Data/7.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+.img9{
+    width: 240px;
+    background-image: url("../../../../public/Data/9.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+.col3top{
+
+    display: flex;
+    height:  40%;
+
+    /* border: 2px solid red; */
+}
+
+.col3bottom{
+
+    display: flex;
+    margin-top: 20px;
+    height: 60%;
+}
+
+
+@media (max-width: 1024px){
+
+
+    .heading {
+
+        width: 80%;
+    }
+
+    .imagemainbox {
+
+        display: grid;
+        margin-top: 100px;
+        gap: 20px;
+        opacity: 80%;
+        cursor: pointer;
+        overflow: hidden;
+        
+    }
+
+    .col1 {
+        display: flex;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .col2 {
+
+        display: flex;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    
+    .col3 {
+        height: auto;
+        overflow: hidden;
+    }
+    .col3top{
+
+        display: flex;
+        height:  auto;
+
+    }
+
+    .col3bottom{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 20px;
+        height: 60%;
+    }
+
+    .img1 {
+
+        background-image: url("../../../../public/Data/1.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+        width: 49%;
+        margin-right: 10px;
+        perspective: 1000px;
+    }
+    .img2 {
+
+        background-image: url("../../../../public/Data/2.jpg");
+        background-position: center;
+        background-size: cover;
+        margin-top: 0px;
+        margin-left: 10px;
+        height: 300px;
+        width: 49%;
+    }
+    
+    .img3 {
+    
+        background-image: url("../../../../public/Data/3.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+        width: 49%;
+        margin-right: 10px;
+    }
+    
+    .img4 {
+        background-image: url("../../../../public/Data/m4.jpg");
+        background-position: center;
+        background-size: cover;
+        margin-top: 0px;
+        margin-left: 10px;
+        height: 300px;
+        width: 49%;
+    }
+    
+    .img5{
+        width: 300px;
+        background-image: url("../../../../public/Data/m5.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+        width: 49%;
+        margin-right: 10px;
+    }
+    
+    .img8{
+        height: 300px;
+        width: 49%;
+        background-image: url("../../../../public/Data/m8.jpg");
+        background-position: center;
+        background-size: cover;
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+    
+    .img6{
+        height: 300px;
+        width: 98%;
+        background-image: url("../../../../public/Data/m6.jpg");
+        background-position: center;
+        background-size: cover;
+        margin-right: 10px;
+    }
+    .img7{
+        height: 300px;
+        width: 98%;
+        background-image: url("../../../../public/Data/7.jpg");
+        background-position: center;
+        background-size: cover;
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+    .img9{
+        width: 200%;
+        height: 300px;
+        margin-top: 20px;
+        background-image: url("../../../../public/Data/m9.jpg");
+        background-position: center;
+        background-size: cover;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 600px){
+
+    .img1{
+        height: 200px;
+    }
+    .img2{
+        height: 200px;
+    }
+    .img3{
+        height: 200px;
+    }
+    .img4{
+        height: 200px;
+    }
+    .img5{
+        height: 200px;
+    }
+    .img6{
+        height: 200px;
+    }
+    .img7{
+        height: 200px;
+    }
+    .img8{
+        height: 200px;
+    }
+    .img9{
+        height: 200px;
+        width: 220%;
+    }
+
+    .flipcardback h1{
+
+        font-size: 22px;
+    }
+    .flipcardback p{
+
+        font-size: 14px;
+
+    }
+    .heading {
+
+        width: 100%;
+    }
+    .heading h1 {
+
+        font-size: 30px;
+        line-height: 25px;
+        font-weight: 700;
+    }
+    .heading p {
+
+        color: #8B8B7E;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.025em;
+    }
+    .flipcardfront {
+
+        position: relative;
+        top: 40%;
+        float: left;
+        margin-left: 10px;
+    }
+    .flipcardfront h1 {
+
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .flipcardfront p {
+
+        margin-top: -23px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .imagemainbox {
+
+        
+        margin-top: 60px;
+    }
+}

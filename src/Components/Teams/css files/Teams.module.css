@@ -1,0 +1,203 @@
+.main {
+
+    width: 90%;
+    margin: auto;
+}
+.head h1{
+
+    font-size: 50px;
+    font-weight: 700;
+}
+.cardcontainer {
+
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+}
+
+.imgbox {
+
+    width: 50%;
+    margin: auto;
+    border-radius: 80px;
+    height: 250px;
+    opacity: 70%;
+    background-color: lightgray;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+.iulogobox{
+
+    width: 90%;
+    margin: auto;
+    border-radius: 80px;
+    height: 120px;
+    background-image: url("../../../../public/Data/iulogo.png");
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+
+    background-color: rgb(66, 64, 64);
+}
+
+.prlogobox{
+
+    width: 90%;
+    margin: auto;
+    border-radius: 80px;
+    height: 120px;
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+
+    background-color: rgb(66, 64, 64);
+}
+
+.card  h2 {
+
+    /* font-family: Archivo;
+    font-style: ExtraBold; */
+    font-size: 35px;
+    line-height: 44px;
+    line-height: 100%;
+    vertical-align: Center;
+    opacity: 90%;
+}
+
+.card h3{
+
+    font-size: 20px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(#E8DE00 0%,#20C9FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 80%;
+}
+
+.card p{
+
+    color:  #8B8B7E;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.024em;
+}
+
+.seprationline img{
+
+    max-width: 113%;
+    margin-left: -100px;
+}
+
+.seprationlineRev img{
+
+    max-width: 113%;
+    margin-left: -100px;
+    transform: rotate(180deg);
+    transform: rotateY(180deg);
+}
+
+@media (max-width: 1024px){
+    .main {
+
+        width: 100%;
+        margin: auto;
+    }
+
+    .cardcontainer {
+
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .imgbox {
+
+        width: 70%;
+        margin: auto;
+        border-radius: 80px;
+        height: 250px;
+        opacity: 70%;
+        background-color: lightgray;
+        overflow: hidden;
+        /* border: 1px solid red; */
+    }
+    .seprationline img{
+
+        max-width: 110%;
+        margin-left: -100px;
+    }
+    
+    .seprationlineRev img{
+    
+        max-width: 110%;
+        margin-left: -100px;
+        transform: rotate(180deg);
+        transform: rotateY(180deg);
+    }
+}
+@media (max-width: 700px){
+
+    .cardcontainer {
+
+        display: grid;
+        width: 100%;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media (max-width: 450px){
+
+    .cardcontainer {
+
+        display: grid;
+        width: 100%;
+        grid-template-columns: 50% 50%;
+    }
+    .card  h2 {
+
+
+        font-size: 24px;
+        line-height: 44px;
+        line-height: 100%;
+        vertical-align: Center;
+        opacity: 90%;
+    }
+    .card p{
+
+        color:  #8B8B7E;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.024em;
+    }
+    .card {
+
+        text-align: center;
+        margin-right: 0px;
+        margin-top: 20px;
+        /* border: 1px solid red; */
+    }
+    .seprationline img{
+
+        max-width: 125%;
+        margin-left: -100px;
+    }
+    
+    .seprationlineRev img{
+    
+        max-width: 125%;
+        margin-left: -100px;
+        transform: rotate(180deg);
+        transform: rotateY(180deg);
+    }
+}

@@ -1,0 +1,136 @@
+.accordions{
+    margin-left: 50px;
+    color: white;
+}
+
+
+.headings h1{
+
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.headings span{
+
+    background: -webkit-linear-gradient(#E8DE00 0%,#20C9FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.underline{
+
+    display: none;
+    width: 400px;
+    overflow: hidden;
+}
+
+
+.accordionsbox{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.questionbox{
+
+    display: flex;
+    align-items: center;
+}
+
+.question{
+
+    font-size: 20px;
+    
+}
+
+.activequestion{
+     
+    font-size: 25px;
+}
+
+.questionbox p{
+
+    font-size: 40px;
+}
+.h3box{
+
+    width: 90%;
+}
+
+.question:hover{
+
+    background: -webkit-linear-gradient(#E8DE00 0%,#20C9FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.oneaccordionbox{
+
+    margin-right: 30px;
+    cursor: pointer;
+    
+}
+
+
+.answerbox p{
+
+    color:  #8B8B7E;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+}
+
+@media (max-width: 1024px){
+    .accordions{
+        margin-left: 0px;
+        color: white;
+    }
+    
+
+    .underline{
+
+        display: block;
+        margin-top: -50px; 
+        width: 400px;
+        overflow: hidden;
+    }
+
+    .accordionsbox{
+
+        display: grid;
+        grid-template-columns:1fr;
+    }
+    .oneaccordionbox{
+
+        margin-right: 0px;
+        cursor: pointer;
+        
+    }
+}
+@media (max-width: 700px){
+
+    .underline{
+
+        display: block;
+        margin-top: -50px;
+        width: 200px;
+        overflow: hidden;
+    }
+
+    .headings h1{
+
+        color: white;
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    .answerbox p{
+
+        color:  #8B8B7E;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+    }
+
+}

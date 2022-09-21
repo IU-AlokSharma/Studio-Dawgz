@@ -1,0 +1,152 @@
+.main {
+
+    position: fixed;
+    width: 350px;
+    height: 150px;
+    left: 10px;
+    bottom: 20px;
+    z-index: 10;
+    margin-left: 100px;
+}
+
+.content {
+    display: flex;
+    z-index: 1;
+    position: absolute;
+}
+
+
+.blurrbox {
+
+    position: absolute;
+    bottom: 1px;
+    width: 100%;
+    height: 90px;
+    opacity: 70%;
+    background-color: rgba(255, 255, 255, .15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.imgbox img {
+
+    width: 150px;
+    height: 150px;
+}
+
+.playbox {
+
+    width: 60px;
+    height: 60px;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin-top: 35px;
+    cursor: pointer;
+    background: linear-gradient(#E8DE00 0%, #20C9FF 100%);
+    border-radius: 50%;
+}
+
+.playimg {
+
+    width: 33px;
+    margin-top: 23%;
+}
+
+.pauseimg {
+
+    width: 20px;
+    margin-top: 23%;
+}
+
+.namebox {
+
+    width: 130px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.namebox h4 {
+
+    font-size: 20px;
+}
+
+.namebox p {
+
+    font-size: 13px;
+    margin-top: -15px;
+}
+
+@media (max-width: 450px) {
+
+    .main {
+
+        position: fixed;
+        width: 70px;
+        height: 70px;
+        background-color: grey;
+        left: 50%;
+        bottom: 30px;
+        border-radius: 50%;
+        margin-left: 100px;
+        overflow: hidden;
+    }
+
+    .imgbox img {
+
+        width: 70px;
+        height: 70px;
+    }
+
+    .namebox {
+
+        display: none
+    }
+
+    .content {
+        display: flex;
+        z-index: 1;
+        position: absolute;
+
+    }
+
+    .playbox {
+
+        width: 35px;
+        height: 35px;
+        position: relative;
+        margin-left: -103px;
+        left: 50px;
+        margin-top: 17px;
+        cursor: pointer;
+        background: linear-gradient(#E8DE00 0%, #20C9FF 100%);
+        border-radius: 50%;
+    }
+
+    .playimg {
+
+        width: 18px;
+        margin-top: 23%;
+    }
+
+    .pauseimg {
+
+        width: 13px;
+        margin-top: 23%;
+    }
+
+    .blurrbox {
+
+        display: none;
+        position: absolute;
+        bottom: 1px;
+        width: 100%;
+        height: 90px;
+        opacity: 70%;
+        background: linear-gradient(#FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+
+    }
+}
